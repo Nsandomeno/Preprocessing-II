@@ -20,15 +20,37 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    @media @phone{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+    }
+
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone{
+        width: 100%;
+        text-align: left;
+
+        h2{
+          text-align: left;
+        }
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @phone{
+        width: 100%;
+        padding: 0%;
+        text-align: center;
+      }
 
       img {
         border-radius: 10px;
@@ -39,6 +61,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone{
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -71,15 +98,30 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    @media @phone{
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 2%;
+
+      @media @phone{
+        width: 100%;
+        margin-top: 2%;
+      }
 
       h4{
         font-size: 2rem;
       }
       .btn{
         width: 100%;
+        
+        @media @phone{
+          width: 100%;
+          text-align: center;
+          margin-bottom: 3%;
+        }
 
         button{
           .signUps();

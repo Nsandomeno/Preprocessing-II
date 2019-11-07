@@ -176,18 +176,40 @@ img {
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width:500px) {
+  .nav-div {
+    flex-direction: column;
+  }
+}
 .nav-div div {
   width: 50%;
   margin-left: 10%;
 }
+@media (max-width:500px) {
+  .nav-div div {
+    width: 100%;
+    margin: 0%;
+  }
+}
 .nav-div div h1 {
   text-align: left;
+}
+@media (max-width:500px) {
+  .nav-div div h1 {
+    text-align: center;
+  }
 }
 .nav-div nav {
   width: 50%;
   margin-right: 10%;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width:500px) {
+  .nav-div nav {
+    width: 100%;
+    margin: 0%;
+  }
 }
 .nav-div nav a {
   font-size: 1.4rem;

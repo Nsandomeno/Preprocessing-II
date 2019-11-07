@@ -52,8 +52,10 @@
   }
 
   .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
+    margin-top: 2.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2.5%;
 
     img {
       border-radius: 10px;
@@ -61,14 +63,28 @@
   }
 
   .content-pick {
+    margin-left: 10%;
+    margin-right: 10%;
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 
     .destination {
       width: 30%;
-      margin-bottom: 30px;
-    }
+      margin-bottom: 2%;
+
+      h4{
+        font-size: 2rem;
+      }
+      .btn{
+        width: 100%;
+
+        button{
+          .signUps();
+        }
+      }//button div class close
+    }//destination class close 
   }
 }// home

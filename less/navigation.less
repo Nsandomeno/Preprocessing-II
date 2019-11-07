@@ -1,1 +1,45 @@
 // Navigation Styles here
+.nav-div{
+    margin-top: 2.5%;
+    padding-bottom: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed #C0C0C0;
+
+    @media @phone{
+        flex-direction: column;
+    }
+
+    div{
+        width: 50%;
+        margin-left: 10%;
+
+        @media @phone{
+            width: 100%;
+            margin: 0%;
+        }//close media query
+        h1{
+            text-align: left;
+
+            @media @phone{
+                text-align: center;
+            }//close media query
+        }//h1 close
+    }//left-side div container Fun-Bus header ends here
+    nav{
+        width: 50%;
+        margin-right: 10%;
+        display: flex;
+        justify-content: space-around;
+
+        @media @phone{
+            width: 100%;
+            margin: 0%;
+        }//close nav item media query
+
+        a{
+            font-size: 1.4rem;
+        }//close the anchor styling for font size of nav items
+    }//navigation items or right side of navigation ends here
+}//navigation section ends here
